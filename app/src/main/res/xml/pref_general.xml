@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- NOTE: EditTextPreference accepts EditText attributes. -->
+	<!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+	<!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+	<!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+	<ListPreference
+		android:defaultValue="1"
+		android:title="@string/default_currency_title"
+		android:entries="@array/currency"
+		android:entryValues="@array/currency_value"
+		android:key="currency_preference"
+		android:icon="@drawable/ic_notifications_black_24dp"
+		android:summary="@string/default_currency_msg"
+		android:dialogIcon="@mipmap/ic_launcher" />
+	<EditTextPreference
+		android:defaultValue="13.5"
+		android:selectAllOnFocus="true"
+		android:singleLine="true"
+		android:title="@string/pref_title_tip"
+		android:key="tip_preference"
+		android:summary="@string/pref_summary_tip"
+		android:inputType="number|numberDecimal" />
+</PreferenceScreen>
