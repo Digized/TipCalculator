@@ -13,9 +13,9 @@
 		android:entries="@array/currency"
 		android:entryValues="@array/currency_value"
 		android:key="currency_preference"
-		android:icon="@drawable/ic_notifications_black_24dp"
+		android:icon="@drawable/ic_attach_money_black_24dp"
 		android:summary="@string/default_currency_msg"
-		android:dialogIcon="@mipmap/ic_launcher" />
+		android:dialogIcon="@drawable/ic_attach_money_black_24dp" />
 	<EditTextPreference
 		android:defaultValue="13.5"
 		android:selectAllOnFocus="true"
@@ -23,5 +23,7 @@
 		android:title="@string/pref_title_tip"
 		android:key="tip_preference"
 		android:summary="@string/pref_summary_tip"
-		android:inputType="number|numberDecimal" />
+		android:inputType="number|numberDecimal"
+		android:icon="@drawable/ic_star_half_black_24dp"
+		android:dialogIcon="@drawable/ic_star_half_black_24dp"/>
 </PreferenceScreen>

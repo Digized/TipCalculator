@@ -23,11 +23,17 @@
 			android:textAppearance="@android:style/TextAppearance.Material.Large"
 			android:layout_weight="1" />
 
+		<Space
+			android:layout_width="match_parent"
+			android:layout_height="20dp"
+			android:layout_weight="1"/>
+
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/lbl_summary_content"
-			android:layout_weight="1" />
+			android:layout_weight="1"
+			android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
 	</LinearLayout>
 
 </RelativeLayout>
